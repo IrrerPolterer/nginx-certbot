@@ -1,4 +1,4 @@
-FROM nginx:alpine-latest
+FROM nginx:stable-alpine
 
 # install dependencies
 RUN apk add --no-cache nano python3 python3-dev py3-pip build-base libressl-dev musl-dev libffi-dev
