@@ -9,5 +9,4 @@ RUN pip3 install --no-cache pip --upgrade
 RUN pip3 install --no-cache cryptography
 RUN pip3 install --no-cache certbot-nginx
 
-# set volumes
-VOLUME ["/etc/letsencrypt", "/etc/nginx/conf.d", "/etc/nginx/nginx.conf"]
+RUN mkdir /etc/letsencrypt
